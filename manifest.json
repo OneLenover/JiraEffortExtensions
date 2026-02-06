@@ -1,0 +1,23 @@
+{
+	"name": "JiraTaskEffort",
+	"description": "For Slava",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_popup": "hello_jira.html"
+	},
+	"icons": {
+		"16": "images/jira_extensions(4).png",
+		"32": "images/jira_extensions(3).png",
+		"48": "images/jira_extensions(2).png",
+		"128": "images/jira_extensions(1).png"
+	},
+	"content_scripts": [
+		{
+			"js": ["scripts/content.js"],
+			"matches": [
+				"https://jira.prg-it.ru/*"
+			]
+		}
+	]
+}
