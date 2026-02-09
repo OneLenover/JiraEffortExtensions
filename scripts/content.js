@@ -47,8 +47,6 @@ function tryAttachPriorityBubble() {
   console.log("Priority hint attached");
 }
 
-
-// 🔥 Следим за появлением формы Jira
 const observer = new MutationObserver(() => {
   tryAttachPriorityBubble();
 });
